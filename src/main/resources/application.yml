@@ -6,20 +6,3 @@ logging:
     root: ERROR
     org.springframework.web: ERROR
     com.auth0.example: TRACE
-
-spring:
-  security:
-    oauth2:
-      client:
-        registration:
-          auth0:
-            client-id: <redacted>
-            client-secret: <redacted>
-            scope:
-              - openid
-              - profile
-              - email
-        provider:
-          auth0:
-            # trailing slash is important!
-            issuer-uri: https://<redacted>.us.auth0.com/
