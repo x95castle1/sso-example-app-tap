@@ -5,9 +5,12 @@ metadata:
     app.kubernetes.io/part-of: sso-example-app-tap
     apps.tanzu.vmware.com/workload-type: web
     apps.tanzu.vmware.com/auto-configure-actuators: "true"
-    autoscaling.knative.dev/min-scale: "1"
   name: sso-example-app-tap
 spec:
+  params:
+  - name: annotations
+    value:
+      autoscaling.knative.dev/minScale: "1"
   build:
     env:
       - name: BP_JVM_VERSION
