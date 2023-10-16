@@ -21,7 +21,7 @@ spec:
     ref:
       apiVersion: services.apps.tanzu.vmware.com/v1alpha1
       kind: ResourceClaim
-      name: sso-example-app-tap-client-registration
+      name: sso-example-app-tap-resource-claim
   source:
     git:
       url: https://github.com/x95castle1/sso-example-app-tap.git
