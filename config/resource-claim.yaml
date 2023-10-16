@@ -1,11 +1,11 @@
 apiVersion: services.apps.tanzu.vmware.com/v1alpha1
 kind: ResourceClaim
 metadata:
-  name: appsso-starter-java-for-auth0
+  name: sso-example-app-tap
   namespace: jeremy
 spec:
   ref:
     apiVersion: sso.apps.tanzu.vmware.com/v1alpha1
     kind: ClientRegistration
-    name: auth0-client-registration
+    name: sso-example-app-tap-client-registration
     namespace: jeremy

@@ -11,6 +11,13 @@ spec:
     env:
       - name: BP_JVM_VERSION
         value: "17"
+  serviceClaims:
+  # this name has to match the client registration you want to use.
+  - name: sso-example-app-tap-client-registration
+    ref:
+      apiVersion: services.apps.tanzu.vmware.com/v1alpha1
+      kind: ResourceClaim
+      name: sso-example-app-tap-client-registration
   source:
     git:
       url: https://github.com/x95castle1/sso-example-app-tap.git
