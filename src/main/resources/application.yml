@@ -12,12 +12,15 @@ org:
           oauth2:
             enable: true
 
+
+
+          enable=true:
 spring:
   security:
     oauth2:
       client:
         registration:
-          auth0:
+          sso-example-app-tap-client-registration:
             client-id: BAlNLiE1MPA6lIfsJYBxj9PsY2XKUdN7
             client-secret: 1Lv47S60dB7TInlxYoxGNFDCm-sa5DV_ymu6FnhJADArQrM4F0SZOwJ0LrEbGaLH
             scope:
@@ -25,6 +28,6 @@ spring:
               - profile
               - email
         provider:
-          auth0:
-            issuer-uri: https://dev-pbi3csp88xs4ezg5.us.auth0.com/
+          sso-example-app-tap-client-registration:
+            issuer-uri: https://auth0-authserver.jeremy.run.prep.tapsme.org
 
