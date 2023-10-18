@@ -1,6 +1,3 @@
-server:
-  port: 3000
-
 logging:
   level:
     root: ERROR
@@ -11,15 +8,15 @@ spring:
   security:
     oauth2:
       client:
-        provider:
-          auth0:
-            issuer-uri: https://auth.example.com
         registration:
           auth0:
-            client-id: messaging-client
-            client-secret: secret
-            authorization-grant-type: authorization_code
-            redirect-uri: "http://test.example.com/login/oauth2/code/{registrationId}"
-            scope: openid
-            client-name: messaging-client
+            client-id: BAlNLiE1MPA6lIfsJYBxj9PsY2XKUdN7
+            client-secret: 1Lv47S60dB7TInlxYoxGNFDCm-sa5DV_ymu6FnhJADArQrM4F0SZOwJ0LrEbGaLH
+            scope:
+              - openid
+              - profile
+              - email
+        provider:
+          auth0:
+            issuer-uri: https://dev-pbi3csp88xs4ezg5.us.auth0.com/
 
