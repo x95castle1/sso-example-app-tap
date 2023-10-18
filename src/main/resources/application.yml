@@ -21,13 +21,13 @@ spring:
       client:
         registration:
           sso-example-app-tap-client-registration:
-            client-id: BAlNLiE1MPA6lIfsJYBxj9PsY2XKUdN7
-            client-secret: 1Lv47S60dB7TInlxYoxGNFDCm-sa5DV_ymu6FnhJADArQrM4F0SZOwJ0LrEbGaLH
+            client-id: xxxx
+            client-secret: xxxx
             scope:
               - openid
               - profile
               - email
         provider:
           sso-example-app-tap-client-registration:
-            issuer-uri: https://auth0-authserver.jeremy.run.prep.tapsme.org
+            issuer-uri: xxxx
 
