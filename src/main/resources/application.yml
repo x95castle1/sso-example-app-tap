@@ -12,9 +12,6 @@ org:
           oauth2:
             enable: true
 
-
-
-          enable=true:
 spring:
   security:
     oauth2:
