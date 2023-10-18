@@ -4,6 +4,14 @@ logging:
     org.springframework.web: ERROR
     com.auth0.example: TRACE
 
+org:
+  springframework:
+    cloud:
+      bindings:
+        boot:
+          oauth2:
+            enable: true
+
 spring:
   security:
     oauth2:
