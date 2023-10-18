@@ -29,5 +29,5 @@ spring:
               - email
         provider:
           sso-example-app-tap-client-registration:
-            issuer-uri: http://www.google.com
+            issuer-uri: https://auth0-authserver.jeremy.run.prep.tapsme.org
 
