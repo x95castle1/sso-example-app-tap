@@ -20,7 +20,7 @@ spring:
     oauth2:
       client:
         registration:
-          sso-example-app-tap-client-registration:
+          auth0:
             client-id: xxxx
             client-secret: xxxx
             scope:
@@ -28,6 +28,6 @@ spring:
               - profile
               - email
         provider:
-          sso-example-app-tap-client-registration:
+          auth0:
             issuer-uri: https://auth0-authserver.jeremy.run.prep.tapsme.org
 
