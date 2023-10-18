@@ -29,5 +29,5 @@ spring:
               - email
         provider:
           sso-example-app-tap-client-registration:
-            issuer-uri: xxxx
+            issuer-uri: http://www.google.com
 
