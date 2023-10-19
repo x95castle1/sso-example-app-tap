@@ -32,5 +32,5 @@ spring:
               - email
         provider:
           auth0:
-            issuer-uri: https://auth0-authserver.jeremy.run.prep.tapsme.org
+            issuer-uri: https://dev-pbi3csp88xs4ezg5.us.auth0.com/
 
