@@ -32,7 +32,7 @@
 
                     <!-- Login button: show if NOT authenticated -->
                     <li sec:authorize="!isAuthenticated()" class="nav-item">
-                        <a th:href="@{/oauth2/authorization/auth0}" id="qsLoginBtn" class="btn btn-primary btn-margin">Login</a>
+                        <a th:href="@{/oauth2/authorization/sso-example-app-tap-client-registration}" id="qsLoginBtn" class="btn btn-primary btn-margin">Login</a>
                     </li>
                     <!-- / Login button -->
 

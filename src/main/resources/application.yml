@@ -23,7 +23,7 @@ spring:
     oauth2:
       client:
         registration:
-          auth0:
+          sso-example-app-tap-client-registration:
             client-id: tcXPnhH0G2xrX4hD3XQihr3Tjpc1SKJA
             client-secret: b3YIHPIUu0NnnPYwEZY3WDOaAD2Hx7AkFh0mxkFBc2marTl7vQEBz0VikvSXsQn5
             scope:
@@ -31,6 +31,6 @@ spring:
               - profile
               - email
         provider:
-          auth0:
+          sso-example-app-tap-client-registration:
             issuer-uri: https://dev-pbi3csp88xs4ezg5.us.auth0.com/
 

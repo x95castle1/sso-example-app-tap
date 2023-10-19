@@ -80,6 +80,6 @@ public class LogoutHandler extends SecurityContextLogoutHandler {
      * @return the {@code ClientRegistration} for this application.
      */
     private ClientRegistration getClientRegistration() {
-        return this.clientRegistrationRepository.findByRegistrationId("auth0");
+        return this.clientRegistrationRepository.findByRegistrationId("sso-example-app-tap-client-registration");
     }
 }
