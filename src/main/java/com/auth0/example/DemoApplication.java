@@ -9,7 +9,9 @@ import org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConf
 public class DemoApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
+		SpringApplication springApplication = new SpringApplication(DemoApplication.class);
+		springApplication.addListeners(new PropertiesLogger());
+		springApplication.run(args);
 	}
 
 }
