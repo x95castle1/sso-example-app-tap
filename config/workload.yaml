@@ -4,7 +4,7 @@ metadata:
   labels:
     app.kubernetes.io/part-of: sso-example-app-tap
     apps.tanzu.vmware.com/workload-type: web
-    apps.tanzu.vmware.com/auto-configure-actuators: "true"
+    apps.tanzu.vmware.com/auto-configure-actuators: "false"
   name: sso-example-app-tap
 spec:
   params:
