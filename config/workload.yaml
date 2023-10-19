@@ -15,9 +15,8 @@ spec:
     env:
       - name: BP_JVM_VERSION
         value: "17"
-  env:
-  - name: JAVA_TOOL_OPTIONS
-    value: -Dorg.springframework.cloud.bindings.boot.enable=true
+      - name: JAVA_TOOL_OPTIONS
+        value: -Dorg.springframework.cloud.bindings.boot.enable=true
   serviceClaims:
   # this name has to match the client registration you want to use.
   - name: sso-example-app-tap-client-registration
