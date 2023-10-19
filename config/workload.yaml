@@ -17,7 +17,7 @@ spec:
         value: "17"
   env:
     - name: JAVA_TOOL_OPTIONS
-      value: -Dorg.springframework.cloud.bindings.boot.enable=true -Dmanagement.health.probes.enabled=false -Dmanagement.info.env.enabled=true -Dmanagement.server.port=8080
+      value: -Dorg.springframework.cloud.bindings.boot.enable=true
   serviceClaims:
   # this name has to match the client registration you want to use.
   - name: sso-example-app-tap-client-registration

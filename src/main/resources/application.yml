@@ -12,6 +12,12 @@ org:
           oauth2:
             enable: true
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: env,info,health
+
 spring:
   security:
     oauth2:

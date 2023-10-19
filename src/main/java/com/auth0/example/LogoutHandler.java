@@ -25,6 +25,7 @@ public class LogoutHandler extends SecurityContextLogoutHandler {
 
     private final Logger log = LoggerFactory.getLogger(this.getClass());
     private final ClientRegistrationRepository clientRegistrationRepository;
+    private String logoutUrl;
 
     /**
      * Create a new instance with a {@code ClientRegistrationRepository}, so that we can look up information about the
