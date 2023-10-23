@@ -32,6 +32,8 @@ spring:
               - profile
               - email
         provider:
+          appsso:
+            issuer-uri: https://dev-pbi3csp88xs4ezg5.us.auth0.com/
           sso-example-app-tap-client-registration:
             issuer-uri: https://dev-pbi3csp88xs4ezg5.us.auth0.com/
 
