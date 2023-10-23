@@ -4,6 +4,7 @@ logging:
     org.springframework.web: ERROR
     com.auth0.example: TRACE
 
+
 org:
   springframework:
     cloud:

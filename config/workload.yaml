@@ -4,8 +4,9 @@ metadata:
   labels:
     app.kubernetes.io/part-of: sso-example-app-tap
     apps.tanzu.vmware.com/workload-type: web
-    apps.tanzu.vmware.com/auto-configure-actuators: "false"
+    apps.tanzu.vmware.com/auto-configure-actuators: "true"
   name: sso-example-app-tap
+  namespace: jeremy
 spec:
   params:
   - name: annotations
@@ -15,8 +16,12 @@ spec:
     env:
       - name: BP_JVM_VERSION
         value: "17"
-      - name: JAVA_TOOL_OPTIONS
-        value: -Dorg.springframework.cloud.bindings.boot.enable=true
+  env:
+  - name: JAVA_TOOL_OPTIONS
+    value: -Dorg.springframework.cloud.bindings.boot.enable=true
+  - name: SPRING_PROFILES_ACTIVE
+    value: cloud
+
   serviceClaims:
   # this name has to match the client registration you want to use.
   - name: sso-example-app-tap-client-registration
