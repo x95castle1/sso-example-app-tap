@@ -31,4 +31,5 @@ spring:
             provider: appsso
             client-id: xxxx
             client-secret: xxxxx
-            scope: openid
+            scope: openid, email, profile
+
