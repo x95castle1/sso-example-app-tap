@@ -5,10 +5,14 @@ metadata:
     app.kubernetes.io/part-of: sso-example-app-tap
     apps.tanzu.vmware.com/workload-type: web
     apps.tanzu.vmware.com/auto-configure-actuators: "true"
+    apps.tanzu.vmware.com/has-tests: "true"
   name: sso-example-app-tap
-  namespace: dev
+  namespace: jeremy
 spec:
   params:
+  - name: testing_pipeline_matching_labels
+    value:
+      apps.tanzu.vmware.com/language: java
   - name: annotations
     value:
       autoscaling.knative.dev/minScale: "1"
@@ -29,11 +33,6 @@ spec:
       apiVersion: services.apps.tanzu.vmware.com/v1alpha1
       kind: ResourceClaim
       name: sso-example-app-tap-resource-claim
-  - name: ca-cert
-    ref:
-      apiVersion: v1 
-      kind: Secret
-      name: tap-ca 
   source:
     git:
       url: https://github.com/x95castle1/sso-example-app-tap.git

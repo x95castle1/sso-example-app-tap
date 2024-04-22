@@ -2,7 +2,7 @@ apiVersion: sso.apps.tanzu.vmware.com/v1alpha1
 kind: ClientRegistration
 metadata:
   name: sso-example-app-tap-client-registration
-  namespace: dev
+  namespace: jeremy
 spec:
   authServerSelector:
     matchLabels:
@@ -14,8 +14,8 @@ spec:
     - refresh_token
   clientAuthenticationMethod: client_secret_basic
   redirectURIs:
-    - https://sso-example-app-tap.dev.h2o-2-22372.h2o.vmware.com/login/oauth2/code/sso-example-app-tap-client-registration
-    - http://sso-example-app-tap.dev.h2o-2-22372.h2o.vmware.com/login/oauth2/code/sso-example-app-tap-client-registration
+    - https://sso-example-app-tap.jeremy.run.upgrade.tapsme.org/login/oauth2/code/sso-example-app-tap-client-registration
+    - http://sso-example-app-tap.jeremy.run.upgrade.tapsme.org/login/oauth2/code/sso-example-app-tap-client-registration
   scopes:
     - name: openid
     - name: email
